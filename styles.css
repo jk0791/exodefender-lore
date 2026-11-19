@@ -1,14 +1,16 @@
+/* Exo Defender lore pages */
+
 body {
     background-color: #000000;
     color: #ffffff;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     line-height: 1.6;
-    margin: 20px;
-    padding-left: 6px;
     max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
+    padding: 0 20px;
 }
+
+/* Headings */
 
 h1, h2, h3, h4 {
     color: #5ADC00;
@@ -27,6 +29,14 @@ h3 {
     font-size: 1.4em;
 }
 
+/* Paragraphs */
+
+p {
+    margin-bottom: 1em;
+}
+
+/* Links */
+
 a {
     color: #ffffff;
     text-decoration: underline;
@@ -36,93 +46,18 @@ a:hover {
     color: #5ADC00;
 }
 
-
-p {
-    margin-bottom: 1em;
-}
-
-a[href="#top"] {
-    font-size: 0.9em;
-    opacity: 0.8;
-}
-
-
-.control-diagram {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-
-    margin: 25px 0;
-    padding: 20px;
-
-    background-color: #050505;
-    box-shadow: 0 0 8px rgba(90,220,0,0.25);
-}
-
-.control-diagram img {
-    width: 30%;
-    height: auto;
-}
-
-.control-text {
-    flex: 1;
-    text-align: center;
-    font-size: 0.95em;
-}
-
-@media (max-width: 600px) {
-    .control-diagram {
-        gap: 12px;
-        padding: 15px;
-    }
-
-    .control-diagram img {
-        width: 35%;
-    }
-
-    .control-text {
-        font-size: 0.9em;
-    }
-}
-
-.image-text {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin: 20px 0;
-}
-
-.image-text img {
-    width: 30%;
-    height: auto;
-}
-
-.image-text .text {
-    flex: 1;
-    text-align: left;
-}
-
-@media (max-width: 600px) {
-    .image-text {
-        gap: 12px;
-    }
-
-    .image-text img {
-        width: 35%;
-    }
-}
+/* Table of contents / archive navigation */
 
 .toc {
     list-style: none;
     padding: 15px 20px;
-    margin: 20px 0 30px 0;
+    margin: 20px 0 30px;
 
     border: 1px solid #5ADC00;
     border-radius: 6px;
 
     background-color: #050505;
-    box-shadow: 0 0 8px rgba(90,220,0,0.25);
+    box-shadow: 0 0 8px rgba(90, 220, 0, 0.25);
 }
 
 .toc a {
@@ -134,125 +69,11 @@ a[href="#top"] {
     color: #5ADC00;
 }
 
-.toc-interactive {
-    display: none;
-}
+/* Illustrations */
 
-.js-enabled .toc-interactive {
+.lore-image {
     display: block;
-}
-
-.js-enabled .toc-static {
-    display: none;
-}
-
-.toc-static > li {
-    margin-bottom: 10px;
-}
-
-.toc-static ul {
-    margin-top: 3px;
-}
-
-.manual-image {
-    display: block;
-    max-width: 85%;
-    height: auto;
-
-    margin: 10px auto 135px auto;
-}
-
-.manual-image-small {
-    display: block;
-    max-width: 300px;
-    max-height: min(200px, 45vh);
-    width: auto;
-    height: auto;
-    margin: 10px auto 35px auto;
-}
-
-.manual-image-button {
-    display: block;
-    max-width: 100px;
-    width: 100%;
-    height: auto;
-    margin: 10px auto 35px auto;
-}
-
-#controls-gamepad img.gamepad-image {
-    width: 350px;
     max-width: 100%;
     height: auto;
-    object-fit: contain;
+    margin: 20px auto;
 }
-
-#controls-keyboard img.keyboard-keys {
-    width: 270px;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-.control-selector {
-    display: none;
-    position: sticky;
-    width: fit-content;
-    margin-left: auto;
-    top: 0px;
-    right: 0px;
-    z-index: 100;
-    background: rgba(34, 34, 34, 0.30);
-    color: #fff;
-    flex-direction: row;
-    align-items: stretch;
-    gap: 0px;
-    padding: 0px;
-    border: 1px solid rgba(85, 85, 85, 0.30);
-    border-radius: 7px;
-}
-
-.control-selector button {
-    min-height: 42px;
-    padding: 7px;
-    border: 1px solid rgba(136, 136, 136, 0.40);
-    color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    background: rgba(56, 56, 56, 0.40);
-    cursor: pointer;
-    font: inherit;
-}
-
-.control-selector button[aria-pressed="true"] {
-    background: rgba(150, 150, 150, 0.6);
-    color: rgba(255, 255, 255, 1.0);
-    border-color: rgba(255, 255, 255, 0.8);
-    font-weight: bold;
-}
-
-.control-mode-heading {
-    color: #5ADC00;
-    font-size: 2em;
-    margin-top: 2em;
-    border-bottom: 1px solid #5ADC00;
-    padding-bottom: 8px;
-}
-
-.js-enabled .control-mode-heading {
-    display: none;
-}
-
-.js-enabled .control-selector {
-    display: flex;
-}
-
-.control-content[hidden] {
-    display:none!important
-}
-
-h2,h3,.section-anchor {
-    scroll-margin-top:100px
-}
-
-
-
-@media(max-width:420px){.control-selector{gap:4px}.control-selector span{width:100%;text-align:center}.control-selector button{flex:1;padding:6px 4px;font-size:0.9em}}
