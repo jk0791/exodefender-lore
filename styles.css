@@ -48,25 +48,28 @@ a:hover {
 
 /* Table of contents / archive navigation */
 
-.toc {
+.toc ul {
     list-style: none;
-    padding: 15px 20px;
-    margin: 20px 0 30px;
+    padding: 0;
+    margin: 0;
+}
 
-    border: 1px solid #5ADC00;
-    border-radius: 6px;
+.toc li {
+    margin-bottom: 20px;
+}
 
-    background-color: #050505;
-    box-shadow: 0 0 8px rgba(90, 220, 0, 0.25);
+.toc li:last-child {
+    margin-bottom: 0;
 }
 
 .toc a {
-    color: #ffffff;
-    text-decoration: none;
+    color: #5ADC00;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 .toc a:hover {
-    color: #5ADC00;
+    color: #ffffff;
 }
 
 /* Illustrations */
