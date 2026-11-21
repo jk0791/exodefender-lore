@@ -90,3 +90,14 @@ a:hover {
     background-position: left center;
     background-size: contain;
 }
+
+.article-banner {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1600 / 120;
+    background-image: url("images/banner_article.png");
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
